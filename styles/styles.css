@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #f3f3f3;
+    font-family: Arial, sans-serif;
+    padding: 0 10px;
+    /* Add padding to the body */
+}
+
+.container {
+    max-width: 1000px;
+    min-width: 500px;
+    width: 100%;
+}
+
+.box {
+    background: #007BFF;
+    color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
