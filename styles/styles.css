@@ -1,26 +1,40 @@
-body {
+.title {
+    font-family: 'Comfortaa';
+    font-weight: 1;
+    font-size: 30px;
+    line-height: 5px;
+    text-align: left;
+}
+
+.menu-bar {
+    width: 100%;
+    /* Change this to your preferred color */
+    border-bottom: 1px solid #888;
+    /* This creates the grey line */
+}
+
+.content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background: #f3f3f3;
-    font-family: Arial, sans-serif;
-    padding: 0 10px;
-    /* Add padding to the body */
 }
 
-.container {
-    max-width: 1000px;
-    min-width: 500px;
-    width: 100%;
+.event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
-
-.box {
-    background: #007BFF;
-    color: #fff;
-    margin: 20px 0;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
+/* Media query for devices with width less than or equal to 600px (generally smartphones) */
+@media only screen and (max-width: 600px) {
+    .title {
+        width: 100%;
+        text-align: center;
+    }
 }
