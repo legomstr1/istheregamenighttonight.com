@@ -1,36 +1,64 @@
-.title {
+body {
     font-family: 'Comfortaa';
     font-weight: 1;
-    font-size: 30px;
-    line-height: 5px;
-    text-align: left;
 }
 
-.menu-bar {
-    width: 100%;
-    /* Change this to your preferred color */
-    border-bottom: 1px solid #888;
-    /* This creates the grey line */
+#site {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
-.content {
+#landing {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
 }
 
-.event {
+#answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-answer {
+    font-size: 200px;
+    text-align: center;
+}
+
+#sub-answer {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#more {
+    align-items: flex-end;
+    text-decoration: none;
+    color: grey;
+    position: absolute;
+    bottom: 2em;
+}
+
+#more a {
+    text-decoration: none;
+    color: grey;
+}
+
+#info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    scroll-snap-align: start;
 }
+
 /* Media query for devices with width less than or equal to 600px (generally smartphones) */
 @media only screen and (max-width: 600px) {
     .title {
