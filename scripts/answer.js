@@ -11,7 +11,7 @@ var isEventSoon = true;
 var isEventToday = false;
 var isEventSpecial = false;
 
-isEventToday = now.getDay() == "Saturday";
+isEventToday = now.getDay() == 6;
 
 if (!isEventSoon) {
     subanswer = "not even this weekend";
