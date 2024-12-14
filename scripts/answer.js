@@ -7,7 +7,7 @@ var hour = now.getHours(); // 0 to 23
 var answer = "no";
 var subanswer;
 
-var isEventSoon = false;
+var isEventSoon = true;
 var isEventToday = false;
 var isEventSpecial = false;
 
